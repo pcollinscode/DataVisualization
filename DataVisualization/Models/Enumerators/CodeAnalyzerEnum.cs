@@ -7,5 +7,6 @@ namespace DataVisualization.Models.Enumerators
 {
   public enum CodeAnalyzerEnum
   {
+    DEFAULT = 0
   }
 }

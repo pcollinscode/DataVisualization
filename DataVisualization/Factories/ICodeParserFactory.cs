@@ -1,6 +1,6 @@
 ﻿using DataVisualization.Models.Enumerators;
 
-namespace DataVisualization.Services
+namespace DataVisualization.Factories
 {
   public interface ICodeParserFactory
   {

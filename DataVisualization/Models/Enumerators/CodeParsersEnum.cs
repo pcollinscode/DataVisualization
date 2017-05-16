@@ -2,5 +2,6 @@
 {
   public enum CodeParsersEnum
   {
+    DEFAULT = 0
   }
 }

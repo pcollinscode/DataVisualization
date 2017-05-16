@@ -1,4 +1,4 @@
-﻿namespace DataVisualization.Services
+﻿namespace DataVisualization.Factories
 {
   public interface ICodeParser
   {

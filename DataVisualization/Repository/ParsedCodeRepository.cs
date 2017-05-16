@@ -14,6 +14,12 @@ namespace DataVisualization.Repository
     {
       
     }
+
+    public Task<ParsedCode> Get()
+    {
+      throw new NotImplementedException();
+    }
+
     public Task<ParsedCode> Get(int id)
     {
       throw new NotImplementedException();

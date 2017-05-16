@@ -17,6 +17,8 @@ namespace DataVisualization
       var config = new HttpConfiguration();
       // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
       ConfigureWebApi(app, config);
+
+      SimpleInjectorContainer.Configure(config);
     }
     private static void ConfigureWebApi(IAppBuilder app, HttpConfiguration config)
     {

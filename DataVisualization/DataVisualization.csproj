@@ -147,17 +147,19 @@
     <Compile Include="App_Start\SimpleInjectorContainer.cs" />
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\ParsedCodeController.cs" />
+    <Compile Include="Factories\JavaCodeAnalyzer.cs" />
     <Compile Include="Models\Enumerators\CodeAnalyzerEnum.cs" />
     <Compile Include="Models\Enumerators\CodeParsersEnum.cs" />
     <Compile Include="Models\ParsedCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IParsedCodeRepository.cs" />
     <Compile Include="Repository\ParsedCodeRepository.cs" />
-    <Compile Include="Services\ICodeAnalyzer.cs" />
-    <Compile Include="Services\ICodeAnalyzerFactory.cs" />
-    <Compile Include="Services\ICodeParser.cs" />
-    <Compile Include="Services\ICodeParserFactory.cs" />
+    <Compile Include="Factories\ICodeAnalyzer.cs" />
+    <Compile Include="Factories\ICodeAnalyzerFactory.cs" />
+    <Compile Include="Factories\ICodeParser.cs" />
+    <Compile Include="Factories\ICodeParserFactory.cs" />
     <Compile Include="Services\INotifyAndUpdate.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
