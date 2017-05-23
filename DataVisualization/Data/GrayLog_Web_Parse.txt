@@ -1,119 +1,119 @@
-Top Webpage: http://docs.graylog.org/en/2.2/
---------------------------------------------------------------------------------
+###Top Webpage: http://docs.graylog.org/en/2.2/
+###--------------------------------------------------------------------------------
 
-List of Pages Processed:
---------------------------------------------------------------------------------
-1: http://docs.graylog.org/en/2.2/pages/architecture.html
-2: http://docs.graylog.org/en/2.2/pages/getting_started.html
-3: http://docs.graylog.org/en/2.2/pages/installation.html
-4: http://docs.graylog.org/en/2.2/pages/upgrade.html
-5: http://docs.graylog.org/en/2.2/pages/configuration.html
-6: http://docs.graylog.org/en/2.2/pages/securing.html
-7: http://docs.graylog.org/en/2.2/pages/sending_data.html
-8: http://docs.graylog.org/en/2.2/pages/collector_sidecar.html
-9: http://docs.graylog.org/en/2.2/pages/collector.html
-10: http://docs.graylog.org/en/2.2/pages/queries.html
-11: http://docs.graylog.org/en/2.2/pages/streams.html
-12: http://docs.graylog.org/en/2.2/pages/streams/alerts.html
-13: http://docs.graylog.org/en/2.2/pages/dashboards.html
-14: http://docs.graylog.org/en/2.2/pages/extractors.html
-15: http://docs.graylog.org/en/2.2/pages/pipelines.html
-16: http://docs.graylog.org/en/2.2/pages/drools.html
-17: http://docs.graylog.org/en/2.2/pages/blacklisting.html
-18: http://docs.graylog.org/en/2.2/pages/geolocation.html
-19: http://docs.graylog.org/en/2.2/pages/indexer_failures.html
-20: http://docs.graylog.org/en/2.2/pages/users_and_roles.html
-21: http://docs.graylog.org/en/2.2/pages/plugins.html
-22: http://docs.graylog.org/en/2.2/pages/external_dashboards.html
-23: http://docs.graylog.org/en/2.2/pages/marketplace.html
-24: http://docs.graylog.org/en/2.2/pages/faq.html
-25: http://docs.graylog.org/en/2.2/pages/gelf.html
-26: http://docs.graylog.org/en/2.2/pages/ideas_explained.html
-27: http://docs.graylog.org/en/2.2/pages/changelog.html
-28: http://docs.graylog.org/en/2.2/pages/enterprise/intro.html
-29: http://docs.graylog.org/en/2.2/pages/enterprise/setup.html
-30: http://docs.graylog.org/en/2.2/pages/archiving.html
-31: http://docs.graylog.org/en/2.2/pages/auditlog.html
-32: http://docs.graylog.org/en/2.2/pages/enterprise/changelog.html
-33: http://docs.graylog.org/en/2.2/pages/architecture.html
-34: http://docs.graylog.org/en/2.2/pages/getting_started.html
-35: http://docs.graylog.org/en/2.2/pages/getting_started/download.html
-36: http://docs.graylog.org/en/2.2/pages/getting_started/import_run.html
-37: http://docs.graylog.org/en/2.2/pages/getting_started/web_console.html
-38: http://docs.graylog.org/en/2.2/pages/getting_started/explore_graylog.html
-39: http://docs.graylog.org/en/2.2/pages/getting_started/rsyslog.html
-40: http://docs.graylog.org/en/2.2/pages/getting_started/check_messages.html
-41: http://docs.graylog.org/en/2.2/pages/getting_started/create_dashboard.html
-42: http://docs.graylog.org/en/2.2/pages/getting_started/stream_alerts.html
-43: http://docs.graylog.org/en/2.2/pages/installation.html
-44: http://docs.graylog.org/en/2.2/pages/installation/virtual_machine_appliances.html
-45: http://docs.graylog.org/en/2.2/pages/installation/operating_system_packages.html
-46: http://docs.graylog.org/en/2.2/pages/installation/config_management_tools.html
-47: http://docs.graylog.org/en/2.2/pages/installation/docker.html
-48: http://docs.graylog.org/en/2.2/pages/installation/vagrant.html
-49: http://docs.graylog.org/en/2.2/pages/installation/openstack.html
-50: http://docs.graylog.org/en/2.2/pages/installation/aws.html
-51: http://docs.graylog.org/en/2.2/pages/installation/windows.html
-52: http://docs.graylog.org/en/2.2/pages/installation/manual_setup.html
-53: http://docs.graylog.org/en/2.2/pages/upgrade.html
-54: http://docs.graylog.org/en/2.2/pages/upgrade/graylog-2.0.html
-55: http://docs.graylog.org/en/2.2/pages/upgrade/graylog-2.1.html
-56: http://docs.graylog.org/en/2.2/pages/upgrade/graylog-2.2.html
-57: http://docs.graylog.org/en/2.2/pages/configuration.html
-58: http://docs.graylog.org/en/2.2/pages/configuration/graylog_ctl.html
-59: http://docs.graylog.org/en/2.2/pages/configuration/web_interface.html
-60: http://docs.graylog.org/en/2.2/pages/configuration/load_balancers.html
-61: http://docs.graylog.org/en/2.2/pages/configuration/https.html
-62: http://docs.graylog.org/en/2.2/pages/configuration/multinode_setup.html
-63: http://docs.graylog.org/en/2.2/pages/configuration/elasticsearch.html
-64: http://docs.graylog.org/en/2.2/pages/configuration/index_model.html
-65: http://docs.graylog.org/en/2.2/pages/configuration/backup.html
-66: http://docs.graylog.org/en/2.2/pages/configuration/file_location.html
-67: http://docs.graylog.org/en/2.2/pages/configuration/rest_api.html
-68: http://docs.graylog.org/en/2.2/pages/securing.html
-69: http://docs.graylog.org/en/2.2/pages/sending_data.html
-70: http://docs.graylog.org/en/2.2/pages/collector_sidecar.html
-71: http://docs.graylog.org/en/2.2/pages/collector.html
-72: http://docs.graylog.org/en/2.2/pages/queries.html
-73: http://docs.graylog.org/en/2.2/pages/streams.html
-74: http://docs.graylog.org/en/2.2/pages/streams/alerts.html
-75: http://docs.graylog.org/en/2.2/pages/dashboards.html
-76: http://docs.graylog.org/en/2.2/pages/extractors.html
-77: http://docs.graylog.org/en/2.2/pages/pipelines.html
-78: http://docs.graylog.org/en/2.2/pages/pipelines/pipelines.html
-79: http://docs.graylog.org/en/2.2/pages/pipelines/rules.html
-80: http://docs.graylog.org/en/2.2/pages/pipelines/stream_connections.html
-81: http://docs.graylog.org/en/2.2/pages/pipelines/functions.html
-82: http://docs.graylog.org/en/2.2/pages/pipelines/usage.html
-83: http://docs.graylog.org/en/2.2/pages/drools.html
-84: http://docs.graylog.org/en/2.2/pages/blacklisting.html
-85: http://docs.graylog.org/en/2.2/pages/geolocation.html
-86: http://docs.graylog.org/en/2.2/pages/indexer_failures.html
-87: http://docs.graylog.org/en/2.2/pages/users_and_roles.html
-88: http://docs.graylog.org/en/2.2/pages/users_and_roles/users.html
-89: http://docs.graylog.org/en/2.2/pages/users_and_roles/roles.html
-90: http://docs.graylog.org/en/2.2/pages/users_and_roles/permission_system.html
-91: http://docs.graylog.org/en/2.2/pages/users_and_roles/external_auth.html
-92: http://docs.graylog.org/en/2.2/pages/plugins.html
-93: http://docs.graylog.org/en/2.2/pages/external_dashboards.html
-94: http://docs.graylog.org/en/2.2/pages/marketplace.html
-95: http://docs.graylog.org/en/2.2/pages/faq.html
-96: http://docs.graylog.org/en/2.2/pages/gelf.html
-97: http://docs.graylog.org/en/2.2/pages/ideas_explained.html
-98: http://docs.graylog.org/en/2.2/pages/changelog.html
-99: http://docs.graylog.org/en/2.2/pages/enterprise/intro.html
-100: http://docs.graylog.org/en/2.2/pages/enterprise/setup.html
-101: http://docs.graylog.org/en/2.2/pages/archiving.html
-102: http://docs.graylog.org/en/2.2/pages/archiving/setup.html
-103: http://docs.graylog.org/en/2.2/pages/archiving/usage.html
-104: http://docs.graylog.org/en/2.2/pages/auditlog.html
-105: http://docs.graylog.org/en/2.2/pages/auditlog/setup.html
-106: http://docs.graylog.org/en/2.2/pages/auditlog/usage.html
-107: http://docs.graylog.org/en/2.2/pages/enterprise/changelog.html
---------------------------------------------------------------------------------
+###List of Pages Processed:
+###--------------------------------------------------------------------------------
+1| http://docs.graylog.org/en/2.2/pages/architecture.html
+2| http://docs.graylog.org/en/2.2/pages/getting_started.html
+3| http://docs.graylog.org/en/2.2/pages/installation.html
+4| http://docs.graylog.org/en/2.2/pages/upgrade.html
+5| http://docs.graylog.org/en/2.2/pages/configuration.html
+6| http://docs.graylog.org/en/2.2/pages/securing.html
+7| http://docs.graylog.org/en/2.2/pages/sending_data.html
+8| http://docs.graylog.org/en/2.2/pages/collector_sidecar.html
+9| http://docs.graylog.org/en/2.2/pages/collector.html
+10| http://docs.graylog.org/en/2.2/pages/queries.html
+11| http://docs.graylog.org/en/2.2/pages/streams.html
+12| http://docs.graylog.org/en/2.2/pages/streams/alerts.html
+13| http://docs.graylog.org/en/2.2/pages/dashboards.html
+14| http://docs.graylog.org/en/2.2/pages/extractors.html
+15| http://docs.graylog.org/en/2.2/pages/pipelines.html
+16| http://docs.graylog.org/en/2.2/pages/drools.html
+17| http://docs.graylog.org/en/2.2/pages/blacklisting.html
+18| http://docs.graylog.org/en/2.2/pages/geolocation.html
+19| http://docs.graylog.org/en/2.2/pages/indexer_failures.html
+20| http://docs.graylog.org/en/2.2/pages/users_and_roles.html
+21| http://docs.graylog.org/en/2.2/pages/plugins.html
+22| http://docs.graylog.org/en/2.2/pages/external_dashboards.html
+23| http://docs.graylog.org/en/2.2/pages/marketplace.html
+24| http://docs.graylog.org/en/2.2/pages/faq.html
+25| http://docs.graylog.org/en/2.2/pages/gelf.html
+26| http://docs.graylog.org/en/2.2/pages/ideas_explained.html
+27| http://docs.graylog.org/en/2.2/pages/changelog.html
+28| http://docs.graylog.org/en/2.2/pages/enterprise/intro.html
+29| http://docs.graylog.org/en/2.2/pages/enterprise/setup.html
+30| http://docs.graylog.org/en/2.2/pages/archiving.html
+31| http://docs.graylog.org/en/2.2/pages/auditlog.html
+32| http://docs.graylog.org/en/2.2/pages/enterprise/changelog.html
+33| http://docs.graylog.org/en/2.2/pages/architecture.html
+34| http://docs.graylog.org/en/2.2/pages/getting_started.html
+35| http://docs.graylog.org/en/2.2/pages/getting_started/download.html
+36| http://docs.graylog.org/en/2.2/pages/getting_started/import_run.html
+37| http://docs.graylog.org/en/2.2/pages/getting_started/web_console.html
+38| http://docs.graylog.org/en/2.2/pages/getting_started/explore_graylog.html
+39| http://docs.graylog.org/en/2.2/pages/getting_started/rsyslog.html
+40| http://docs.graylog.org/en/2.2/pages/getting_started/check_messages.html
+41| http://docs.graylog.org/en/2.2/pages/getting_started/create_dashboard.html
+42| http://docs.graylog.org/en/2.2/pages/getting_started/stream_alerts.html
+43| http://docs.graylog.org/en/2.2/pages/installation.html
+44| http://docs.graylog.org/en/2.2/pages/installation/virtual_machine_appliances.html
+45| http://docs.graylog.org/en/2.2/pages/installation/operating_system_packages.html
+46| http://docs.graylog.org/en/2.2/pages/installation/config_management_tools.html
+47| http://docs.graylog.org/en/2.2/pages/installation/docker.html
+48| http://docs.graylog.org/en/2.2/pages/installation/vagrant.html
+49| http://docs.graylog.org/en/2.2/pages/installation/openstack.html
+50| http://docs.graylog.org/en/2.2/pages/installation/aws.html
+51| http://docs.graylog.org/en/2.2/pages/installation/windows.html
+52| http://docs.graylog.org/en/2.2/pages/installation/manual_setup.html
+53| http://docs.graylog.org/en/2.2/pages/upgrade.html
+54| http://docs.graylog.org/en/2.2/pages/upgrade/graylog-2.0.html
+55| http://docs.graylog.org/en/2.2/pages/upgrade/graylog-2.1.html
+56| http://docs.graylog.org/en/2.2/pages/upgrade/graylog-2.2.html
+57| http://docs.graylog.org/en/2.2/pages/configuration.html
+58| http://docs.graylog.org/en/2.2/pages/configuration/graylog_ctl.html
+59| http://docs.graylog.org/en/2.2/pages/configuration/web_interface.html
+60| http://docs.graylog.org/en/2.2/pages/configuration/load_balancers.html
+61| http://docs.graylog.org/en/2.2/pages/configuration/https.html
+62| http://docs.graylog.org/en/2.2/pages/configuration/multinode_setup.html
+63| http://docs.graylog.org/en/2.2/pages/configuration/elasticsearch.html
+64| http://docs.graylog.org/en/2.2/pages/configuration/index_model.html
+65| http://docs.graylog.org/en/2.2/pages/configuration/backup.html
+66| http://docs.graylog.org/en/2.2/pages/configuration/file_location.html
+67| http://docs.graylog.org/en/2.2/pages/configuration/rest_api.html
+68| http://docs.graylog.org/en/2.2/pages/securing.html
+69| http://docs.graylog.org/en/2.2/pages/sending_data.html
+70| http://docs.graylog.org/en/2.2/pages/collector_sidecar.html
+71| http://docs.graylog.org/en/2.2/pages/collector.html
+72| http://docs.graylog.org/en/2.2/pages/queries.html
+73| http://docs.graylog.org/en/2.2/pages/streams.html
+74| http://docs.graylog.org/en/2.2/pages/streams/alerts.html
+75| http://docs.graylog.org/en/2.2/pages/dashboards.html
+76| http://docs.graylog.org/en/2.2/pages/extractors.html
+77| http://docs.graylog.org/en/2.2/pages/pipelines.html
+78| http://docs.graylog.org/en/2.2/pages/pipelines/pipelines.html
+79| http://docs.graylog.org/en/2.2/pages/pipelines/rules.html
+80| http://docs.graylog.org/en/2.2/pages/pipelines/stream_connections.html
+81| http://docs.graylog.org/en/2.2/pages/pipelines/functions.html
+82| http://docs.graylog.org/en/2.2/pages/pipelines/usage.html
+83| http://docs.graylog.org/en/2.2/pages/drools.html
+84| http://docs.graylog.org/en/2.2/pages/blacklisting.html
+85| http://docs.graylog.org/en/2.2/pages/geolocation.html
+86| http://docs.graylog.org/en/2.2/pages/indexer_failures.html
+87| http://docs.graylog.org/en/2.2/pages/users_and_roles.html
+88| http://docs.graylog.org/en/2.2/pages/users_and_roles/users.html
+89| http://docs.graylog.org/en/2.2/pages/users_and_roles/roles.html
+90| http://docs.graylog.org/en/2.2/pages/users_and_roles/permission_system.html
+91| http://docs.graylog.org/en/2.2/pages/users_and_roles/external_auth.html
+92| http://docs.graylog.org/en/2.2/pages/plugins.html
+93| http://docs.graylog.org/en/2.2/pages/external_dashboards.html
+94| http://docs.graylog.org/en/2.2/pages/marketplace.html
+95| http://docs.graylog.org/en/2.2/pages/faq.html
+96| http://docs.graylog.org/en/2.2/pages/gelf.html
+97| http://docs.graylog.org/en/2.2/pages/ideas_explained.html
+98| http://docs.graylog.org/en/2.2/pages/changelog.html
+99| http://docs.graylog.org/en/2.2/pages/enterprise/intro.html
+100| http://docs.graylog.org/en/2.2/pages/enterprise/setup.html
+101| http://docs.graylog.org/en/2.2/pages/archiving.html
+102| http://docs.graylog.org/en/2.2/pages/archiving/setup.html
+103| http://docs.graylog.org/en/2.2/pages/archiving/usage.html
+104| http://docs.graylog.org/en/2.2/pages/auditlog.html
+105| http://docs.graylog.org/en/2.2/pages/auditlog/setup.html
+106| http://docs.graylog.org/en/2.2/pages/auditlog/usage.html
+107| http://docs.graylog.org/en/2.2/pages/enterprise/changelog.html
+###--------------------------------------------------------------------------------
 
-List of Words (webpage #, word, count)
---------------------------------------------------------------------------------
+###List of Words (webpage #, word, count)
+###--------------------------------------------------------------------------------
 58, nodes, 4
 72, pipeline, 12
 74, job, 1
@@ -27679,4 +27679,4 @@ List of Words (webpage #, word, count)
 70, those, 2
 72, content, 3
 6, look, 1
---------------------------------------------------------------------------------
+###--------------------------------------------------------------------------------

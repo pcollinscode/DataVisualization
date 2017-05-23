@@ -9,10 +9,10 @@ namespace DataVisualization.Repository
 {
   public interface IParsedDocumentationRepository
   {
-    Task<ParsedDocumentation> Get();
-    Task<ParsedDocumentation> Get(int id);
-    Task Create(ParsedDocumentation entity);
-    Task Delete(int id);
-    Task<ParsedDocumentation> Update(ParsedDocumentation entity);
+    List<ParsedDocumentation> Get();
+    ParsedDocumentation Get(int id);
+    ParsedDocumentation Create(ParsedDocumentation entity);
+    void Delete(int id);
+    ParsedDocumentation Update(ParsedDocumentation entity);
   }
 }

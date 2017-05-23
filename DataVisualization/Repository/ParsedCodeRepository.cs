@@ -39,15 +39,15 @@ namespace DataVisualization.Repository
             package = package.Replace("\"", string.Empty);
 
             //if package already exists
-            if (result.Packages.Count(i => i.PackageName == package) > 0)
+            if (result.Packages.Count(i => i.ComponentName == package) > 0)
             {
               continue;
             }
 
             result.Packages.Add(new Package
             {
-              PackageName = package,
-              Source = new List<string>()
+              ComponentName = package,
+              Connections = new List<string>()
             });
           }
           else if (line.StartsWith("source"))
@@ -59,11 +59,11 @@ namespace DataVisualization.Repository
             target = target.Split('=')[1].Replace("\"", string.Empty);
 
             //package was not listed so skip
-            if (result.Packages.FirstOrDefault(x => x.PackageName == target) == null)
+            if (result.Packages.FirstOrDefault(x => x.ComponentName == target) == null)
             {
               continue;
             }
-            result.Packages.First(x => x.PackageName == target).Source.Add(source);
+            result.Packages.First(x => x.ComponentName == target).Connections.Add(source);
           }
           else
           {

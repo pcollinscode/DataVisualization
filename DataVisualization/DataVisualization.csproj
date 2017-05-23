@@ -169,6 +169,7 @@
     <Compile Include="Factories\ICodeAnalyzerFactory.cs" />
     <Compile Include="Factories\ICodeParser.cs" />
     <Compile Include="Factories\ICodeParserFactory.cs" />
+    <Compile Include="Repository\ParsedDocumentationRepository.cs" />
     <Compile Include="Services\INotifyAndUpdateService.cs" />
     <Compile Include="Services\NotifyAndUpdateService.cs" />
     <Compile Include="Utilities\StringExtensions.cs" />

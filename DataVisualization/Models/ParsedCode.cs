@@ -19,9 +19,9 @@ namespace DataVisualization.Models
   {
     public Package()
     {
-      Source = new List<string>();
+      Connections = new List<string>();
     }
-    public string PackageName { get; set; }
-    public List<string> Source { get; set; }
+    public string ComponentName { get; set; }
+    public List<string> Connections { get; set; }
   }
 }

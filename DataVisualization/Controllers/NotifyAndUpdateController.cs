@@ -52,7 +52,7 @@ namespace DataVisualization.Controllers
 
       return Created(new Uri(createdUri), result);
     }
-    [Route("{id}")]
+    //[Route("{id}")]
     public IHttpActionResult Delete(int id)
     {
       return Ok();
