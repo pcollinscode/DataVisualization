@@ -1,7 +1,7 @@
-﻿using System;
-using System.Web.Http;
+﻿using System.Web.Http;
 using DataVisualization.Factories;
 using DataVisualization.Repository;
+using DataVisualization.Services;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
 
@@ -18,6 +18,7 @@ namespace DataVisualization
       container.Register<JavaCodeAnalyzer>();
 
       //services
+      container.Register<INotifyAndUpdateService, NotifyAndUpdateService>();
 
       //repositories
       container.Register<IParsedCodeRepository, ParsedCodeRepository>();

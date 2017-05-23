@@ -141,24 +141,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\code_parse_example.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\GrayLog_Web_Parse.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SimpleInjectorContainer.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="Controllers\NotifyAndUpdateController.cs" />
     <Compile Include="Controllers\ParsedCodeController.cs" />
+    <Compile Include="Controllers\ParsedDocumentationController.cs" />
     <Compile Include="Factories\JavaCodeAnalyzer.cs" />
     <Compile Include="Models\Enumerators\CodeAnalyzerEnum.cs" />
     <Compile Include="Models\Enumerators\CodeParsersEnum.cs" />
+    <Compile Include="Models\NotifyAndUpdateData.cs" />
     <Compile Include="Models\ParsedCode.cs" />
+    <Compile Include="Models\ParsedDocumentation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IParsedCodeRepository.cs" />
+    <Compile Include="Repository\IParsedDocumentationRepository.cs" />
     <Compile Include="Repository\ParsedCodeRepository.cs" />
     <Compile Include="Factories\ICodeAnalyzer.cs" />
     <Compile Include="Factories\ICodeAnalyzerFactory.cs" />
     <Compile Include="Factories\ICodeParser.cs" />
     <Compile Include="Factories\ICodeParserFactory.cs" />
-    <Compile Include="Services\INotifyAndUpdate.cs" />
+    <Compile Include="Services\INotifyAndUpdateService.cs" />
+    <Compile Include="Services\NotifyAndUpdateService.cs" />
     <Compile Include="Utilities\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

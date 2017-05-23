@@ -5,7 +5,7 @@ namespace DataVisualization.Repository
 {
   public interface IParsedCodeRepository
   {
-    Task<ParsedCode> Get();
+    ParsedCode Get();
     Task<ParsedCode> Get(int id);
     Task Create(ParsedCode entity);
     Task Delete(int id);
