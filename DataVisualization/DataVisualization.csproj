@@ -147,6 +147,10 @@
     <Content Include="Data\GrayLog_Web_Parse.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\GrayLog_Web_Parse_combined.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +174,7 @@
     <Compile Include="Factories\ICodeParser.cs" />
     <Compile Include="Factories\ICodeParserFactory.cs" />
     <Compile Include="Repository\ParsedDocumentationRepository.cs" />
+    <Compile Include="Repository\ParsedDocumentRepositoryCombined.cs" />
     <Compile Include="Services\INotifyAndUpdateService.cs" />
     <Compile Include="Services\NotifyAndUpdateService.cs" />
     <Compile Include="Utilities\StringExtensions.cs" />
