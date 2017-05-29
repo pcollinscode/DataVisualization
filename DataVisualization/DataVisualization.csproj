@@ -182,8 +182,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="dataviz553.PublishSettings" />
-    <Content Include="Data\flare.json">
+    <Content Include="dataviz553.PublishSettings">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\visualizationdata.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\flare_original.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\dataviz553 - FTP.pubxml" />

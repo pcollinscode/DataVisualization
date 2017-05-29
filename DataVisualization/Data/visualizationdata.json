@@ -1,0 +1,39 @@
+﻿{
+  "name": "greylog",
+  "children": [
+    {
+      "name": "alarmcallbacks",
+      "children": [
+        {
+          "name": "alerts",
+          "size": 1
+        },
+        {
+          "name": "migrations",
+          "size": 1
+        },
+        {
+          "name": "streams",
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "audit",
+      "children": [
+        {
+          "name": "notifications",
+          "size": 1
+        },
+        {
+          "name": "indexer",
+          "size": 1
+        },
+        {
+          "name": "plugin",
+          "size": 1
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@ namespace DataVisualization.Repository
   {
     public JObject Get()
     {
-      var file = AppDomain.CurrentDomain.BaseDirectory + @"Data\flare.json";
+      var file = AppDomain.CurrentDomain.BaseDirectory + @"Data\visualizationdata.json";
 
       var o = JObject.Parse(File.ReadAllText(file));
 
