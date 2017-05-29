@@ -23,6 +23,7 @@ namespace DataVisualization
       //repositories
       container.Register<IParsedCodeRepository, ParsedCodeRepository>();
       container.Register<IParsedDocumentationRepository, ParsedDocumentationRepository>();
+      container.Register<IVisualizationDataRepository, VisualizationDataRepository>();
 
       config.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
     }
