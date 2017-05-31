@@ -147,7 +147,9 @@
     </Content>
     <Content Include="index.html" />
     <Content Include="Web.config" />
+    <Content Include="Web\d3.dependencyWheel.js" />
     <Content Include="Web\d3.js" />
+    <Content Include="Web\d3.min.js" />
     <Content Include="Web\main.css" />
     <Content Include="Web\main.js" />
   </ItemGroup>
@@ -159,6 +161,7 @@
     <Compile Include="Controllers\ParsedDocumentationController.cs" />
     <Compile Include="Controllers\VisualizationDataController.cs" />
     <Compile Include="Factories\JavaCodeAnalyzer.cs" />
+    <Compile Include="Models\DependencyWheel.cs" />
     <Compile Include="Models\Enumerators\CodeAnalyzerEnum.cs" />
     <Compile Include="Models\Enumerators\CodeParsersEnum.cs" />
     <Compile Include="Models\NotifyAndUpdateData.cs" />
@@ -189,6 +192,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Data\flare_original.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\visualizationdata_wheel.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\dataviz553 - FTP.pubxml" />

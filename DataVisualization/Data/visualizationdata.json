@@ -1,37 +1,46 @@
 ﻿{
   "name": "greylog",
+  "datemodified": "2017-05-29T17:38:47.824Z",
   "children": [
     {
       "name": "alarmcallbacks",
+      "datemodified": "2017-04-29T17:38:47.824Z",
       "children": [
         {
           "name": "alerts",
-          "size": 1
+          "size": 1,
+          "datemodified": "2017-03-29T17:38:47.824Z"
         },
         {
           "name": "migrations",
-          "size": 1
+          "size": 1,
+          "datemodified": "2017-02-29T17:38:47.824Z"
         },
         {
           "name": "streams",
-          "size": 1
+          "size": 1,
+          "datemodified": "2017-01-29T17:38:47.824Z"
         }
       ]
     },
     {
       "name": "audit",
+      "datemodified": "2017-05-20T17:38:47.824Z",
       "children": [
         {
           "name": "notifications",
-          "size": 1
+          "size": 1,
+          "datemodified": "2017-04-15T17:38:47.824Z"
         },
         {
           "name": "indexer",
-          "size": 1
+          "size": 1,
+          "datemodified": "2017-05-29T17:38:47.824Z"
         },
         {
           "name": "plugin",
-          "size": 1
+          "size": 1,
+          "datemodified": "2017-05-29T17:38:47.824Z"
         }
       ]
     }

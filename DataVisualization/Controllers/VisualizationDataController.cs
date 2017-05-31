@@ -24,5 +24,12 @@ namespace DataVisualization.Controllers
 
       return Ok(result);
     }
+    [Route("{id}")]
+    public async Task<IHttpActionResult> GetById(int id)
+    {
+      var result = _visualizationDataRepository.GetById(id);
+
+      return Ok(result);
+    }
   }
 }

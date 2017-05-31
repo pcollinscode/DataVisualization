@@ -10,5 +10,6 @@ namespace DataVisualization.Repository
   public interface IVisualizationDataRepository
   {
     JObject Get();
+    JObject GetById(int id);
   }
 }
