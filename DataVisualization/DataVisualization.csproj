@@ -166,6 +166,7 @@
     <Compile Include="Models\DependencyWheel.cs" />
     <Compile Include="Models\NotifyAndUpdateData.cs" />
     <Compile Include="Models\ParsedCode.cs" />
+    <Compile Include="Models\ParsedData.cs" />
     <Compile Include="Models\ParsedDocumentation.cs" />
     <Compile Include="Models\VisualizationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -23,7 +23,7 @@
   d3.json("./api/visualizationdata/1", function (data) {
 
     //var data = JSON.parse(data_inc);
-    node = root = data;
+    node = root = data.DependencyGroup;
 
     var nodes = pack.nodes(root);
 
@@ -114,7 +114,7 @@ function buildDepWheel() {
     var chord = d3.layout.chord()
       .padding(.15)
       .sortChords(d3.descending)
-      .matrix(data.matrix);
+      .matrix(data.DependencyWheel.matrix);
 
     var innerRadius = Math.min(640, 400) * .39;
     var outerRadius = innerRadius * 1.1;
@@ -122,7 +122,7 @@ function buildDepWheel() {
     var chart = d3.chart.dependencyWheel();
 
     var svg = d3.select("#depWheel")
-      .datum(data)
+      .datum(data.DependencyWheel)
       .call(chart);
 
     //https://www.visualcinnamon.com/2016/06/orientation-gradient-d3-chord-diagram.html
