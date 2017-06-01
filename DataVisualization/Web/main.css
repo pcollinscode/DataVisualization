@@ -166,5 +166,5 @@ circle {
 
 /*initially hide thead other button*/
 .dep-wheel {
-  display: none;
+  /*display: none;*/
 }

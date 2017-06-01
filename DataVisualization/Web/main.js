@@ -1,8 +1,8 @@
 ﻿function example() {
 
-  var w = 1280,
-    h = 800,
-    r = 720,
+  var w = 700,
+    h = 700,
+    r = 450,
     x = d3.scale.linear().range([0, r]),
     y = d3.scale.linear().range([0, r]),
     node,
@@ -116,7 +116,7 @@ function buildDepWheel() {
       .sortChords(d3.descending)
       .matrix(data.matrix);
 
-    var innerRadius = Math.min(1280, 800) * .39;
+    var innerRadius = Math.min(640, 400) * .39;
     var outerRadius = innerRadius * 1.1;
 
     var chart = d3.chart.dependencyWheel();
