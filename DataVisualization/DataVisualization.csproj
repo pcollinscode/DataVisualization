@@ -161,12 +161,13 @@
     <Compile Include="Controllers\ParsedDocumentationController.cs" />
     <Compile Include="Controllers\VisualizationDataController.cs" />
     <Compile Include="Factories\JavaCodeAnalyzer.cs" />
+    <Compile Include="Factories\JavaCodeParser.cs" />
+    <Compile Include="Models\DependencyGroup.cs" />
     <Compile Include="Models\DependencyWheel.cs" />
-    <Compile Include="Models\Enumerators\CodeAnalyzerEnum.cs" />
-    <Compile Include="Models\Enumerators\CodeParsersEnum.cs" />
     <Compile Include="Models\NotifyAndUpdateData.cs" />
     <Compile Include="Models\ParsedCode.cs" />
     <Compile Include="Models\ParsedDocumentation.cs" />
+    <Compile Include="Models\VisualizationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IParsedCodeRepository.cs" />
     <Compile Include="Repository\IParsedDocumentationRepository.cs" />
@@ -180,7 +181,9 @@
     <Compile Include="Repository\ParsedDocumentRepositoryCombined.cs" />
     <Compile Include="Repository\VisualizationDataRepository.cs" />
     <Compile Include="Services\INotifyAndUpdateService.cs" />
+    <Compile Include="Services\IVisualizationDataService.cs" />
     <Compile Include="Services\NotifyAndUpdateService.cs" />
+    <Compile Include="Services\VisualizationDataService.cs" />
     <Compile Include="Utilities\StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -17,8 +17,12 @@ namespace DataVisualization
       container.Register<ICodeAnalyzerFactory, SimpleInjectorCodeAnalyzerFactory>();
       container.Register<JavaCodeAnalyzer>();
 
+      container.Register<ICodeParserFactory, SimpleInjectorCodeParserFactory>();
+      container.Register<JavaCodeParser>();
+
       //services
       container.Register<INotifyAndUpdateService, NotifyAndUpdateService>();
+      container.Register<IVisualizationDataService, VisualizationDataService>();
 
       //repositories
       container.Register<IParsedCodeRepository, ParsedCodeRepository>();
@@ -39,6 +43,21 @@ namespace DataVisualization
     }
 
     public T CreateCodeAnalyzer<T>() where T : class, ICodeAnalyzer
+    {
+      return _container.GetInstance<T>();
+    }
+  }
+
+  internal class SimpleInjectorCodeParserFactory : ICodeParserFactory
+  {
+    private readonly Container _container;
+
+    public SimpleInjectorCodeParserFactory(Container container)
+    {
+      _container = container;
+    }
+
+    public T CreateCodeParser<T>() where T : class, ICodeParser
     {
       return _container.GetInstance<T>();
     }

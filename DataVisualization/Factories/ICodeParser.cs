@@ -1,7 +1,9 @@
-﻿namespace DataVisualization.Factories
+﻿using DataVisualization.Models;
+
+namespace DataVisualization.Factories
 {
   public interface ICodeParser
   {
-    void Parse();
+    ParsedCode Parse();
   }
 }

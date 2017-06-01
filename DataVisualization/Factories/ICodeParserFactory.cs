@@ -1,9 +1,7 @@
-﻿using DataVisualization.Models.Enumerators;
-
-namespace DataVisualization.Factories
+﻿namespace DataVisualization.Factories
 {
   public interface ICodeParserFactory
   {
-    ICodeParser GetCodeParser(CodeParsersEnum codeParser);
+    T CreateCodeParser<T>() where T : class, ICodeParser;
   }
 }

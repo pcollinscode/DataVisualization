@@ -1,7 +1,4 @@
-﻿using System;
-using DataVisualization.Models.Enumerators;
-
-namespace DataVisualization.Factories
+﻿namespace DataVisualization.Factories
 {
   public interface ICodeAnalyzerFactory
   {

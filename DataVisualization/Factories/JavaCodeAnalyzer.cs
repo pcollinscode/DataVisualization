@@ -1,12 +1,17 @@
-﻿using DataVisualization.Utilities;
+﻿using DataVisualization.Models;
 
 namespace DataVisualization.Factories
 {
   public class JavaCodeAnalyzer : ICodeAnalyzer
   {
-    public string Analyze(string id)
+    public DependencyWheel BuilDependencyWheel()
     {
-      return "analysis complete for '{0}'".FormatString(id);
+      throw new System.NotImplementedException();
+    }
+
+    public DependencyGroup BuilDependencyGroup()
+    {
+      throw new System.NotImplementedException();
     }
   }
 }

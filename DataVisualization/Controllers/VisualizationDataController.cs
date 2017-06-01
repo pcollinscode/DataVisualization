@@ -1,33 +1,30 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Web.Http;
-using DataVisualization.Repository;
-using Newtonsoft.Json.Linq;
+using DataVisualization.Services;
 
 namespace DataVisualization.Controllers
 {
   [RoutePrefix("visualizationdata")]
   public class VisualizationDataController : ApiController
   {
-    private readonly IVisualizationDataRepository _visualizationDataRepository;
+    private readonly IVisualizationDataService _visualizationDataService;
 
-    public VisualizationDataController(IVisualizationDataRepository visualizationDataRepository)
+    public VisualizationDataController(IVisualizationDataService visualizationDataService)
     {
-      _visualizationDataRepository = visualizationDataRepository;
+      _visualizationDataService = visualizationDataService;
     }
 
     [Route]
     public async Task<IHttpActionResult> Get()
     {
-      var result = _visualizationDataRepository.Get();
+      var result = _visualizationDataService.Get();
 
       return Ok(result);
     }
     [Route("{id}")]
     public async Task<IHttpActionResult> GetById(int id)
     {
-      var result = _visualizationDataRepository.GetById(id);
+      var result = _visualizationDataService.GetById(id);
 
       return Ok(result);
     }

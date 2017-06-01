@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace DataVisualization.Models.Enumerators
+namespace DataVisualization.Models
 {
-  public enum CodeAnalyzerEnum
+  public class DependencyGroup
   {
-    DEFAULT = 0
   }
 }
