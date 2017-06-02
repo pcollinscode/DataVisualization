@@ -67,7 +67,10 @@ namespace DataVisualization.Factories
     /// <returns></returns>
     public JObject BuildDependencyGroup(ParsedData data)
     {
-      //var data = _visualizationDataRepository.GetParsedCodeData();
+      if (data == null)
+      {
+        data = _visualizationDataRepository.GetParsedCodeData();
+      }
 
       var file = AppDomain.CurrentDomain.BaseDirectory + @"Data\visualizationdata.json";
       var o = JObject.Parse(File.ReadAllText(file));
