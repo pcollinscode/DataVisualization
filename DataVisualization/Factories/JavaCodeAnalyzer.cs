@@ -20,9 +20,12 @@ namespace DataVisualization.Factories
     /// Analyze the parsed code data to create information for visualization
     /// </summary>
     /// <returns></returns>
-    public DependencyWheel BuildDependencyWheel()
+    public DependencyWheel BuildDependencyWheel(ParsedData data)
     {
-      var data = _visualizationDataRepository.GetParsedCodeData();
+      if (data == null)
+      {
+        data = _visualizationDataRepository.GetParsedCodeData();
+      }
 
       var wheel = new DependencyWheel
       {
@@ -62,7 +65,7 @@ namespace DataVisualization.Factories
     /// Create object to display the dependency grouping from the parsed code data
     /// </summary>
     /// <returns></returns>
-    public JObject BuildDependencyGroup()
+    public JObject BuildDependencyGroup(ParsedData data)
     {
       //var data = _visualizationDataRepository.GetParsedCodeData();
 

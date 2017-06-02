@@ -5,9 +5,9 @@ namespace DataVisualization.Factories
 {
   public class JavaCodeParser : ICodeParser
   {
-    public ParsedCode Parse()
+    public ParsedData Parse()
     {
-      throw new NotImplementedException();
+      return null;
     }
   }
 }

@@ -25,9 +25,9 @@ namespace DataVisualization.Services
       var javaAnalyzer = _codeAnalyzerFactory.CreateCodeAnalyzer<JavaCodeAnalyzer>();
       var javaParser = _codeParserFactory.CreateCodeParser<JavaCodeParser>();
 
-      //var parsed = javaParser.Parse();
-      var dependencyGroup = javaAnalyzer.BuildDependencyGroup();
-      var dependencyWheel = javaAnalyzer.BuildDependencyWheel();
+      var data = javaParser.Parse();
+      var dependencyGroup = javaAnalyzer.BuildDependencyGroup(data);
+      var dependencyWheel = javaAnalyzer.BuildDependencyWheel(data);
 
       return new VisualizationData
       {

@@ -5,7 +5,7 @@ namespace DataVisualization.Factories
 {
   public interface ICodeAnalyzer
   {
-    DependencyWheel BuildDependencyWheel();
-    JObject BuildDependencyGroup();
+    DependencyWheel BuildDependencyWheel(ParsedData data);
+    JObject BuildDependencyGroup(ParsedData data);
   }
 }
