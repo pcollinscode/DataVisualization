@@ -1,11 +1,9 @@
 ﻿using System;
-using DataVisualization.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using DataVisualization.Models;
 
-namespace DataVisualization.Factories
+namespace DataVisualization.Factories.CodeParser
 {
   public class JavaCodeParser : ICodeParser
   {

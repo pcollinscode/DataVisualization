@@ -1,6 +1,6 @@
 ﻿using DataVisualization.Models;
 
-namespace DataVisualization.Factories
+namespace DataVisualization.Factories.CodeParser
 {
   public interface ICodeParser
   {

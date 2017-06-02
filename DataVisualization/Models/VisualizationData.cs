@@ -4,8 +4,7 @@ namespace DataVisualization.Models
 {
   public class VisualizationData
   {
-    //public DependencyGroup DependencyGroup { get; set; }
-    public JObject DependencyGroup { get; set; }
+    public DependencyGroup DependencyGroup { get; set; }
     public DependencyWheel DependencyWheel { get; set; }
   }
 }

@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Linq;
 using DataVisualization.Models;
 using DataVisualization.Repository;
-using Newtonsoft.Json.Linq;
 
-namespace DataVisualization.Factories
+namespace DataVisualization.Factories.CodeAnalyzer
 {
   public class JavaCodeAnalyzer : ICodeAnalyzer
   {
     private readonly IVisualizationDataRepository _visualizationDataRepository;
+    private readonly Random _rand;
 
     public JavaCodeAnalyzer(IVisualizationDataRepository visualizationDataRepository)
     {
       _visualizationDataRepository = visualizationDataRepository;
+      _rand = new Random();
     }
 
     /// <summary>
@@ -65,17 +66,59 @@ namespace DataVisualization.Factories
     /// Create object to display the dependency grouping from the parsed code data
     /// </summary>
     /// <returns></returns>
-    public JObject BuildDependencyGroup(ParsedData data)
+    public DependencyGroup BuildDependencyGroup(ParsedData data)
     {
       if (data == null)
       {
         data = _visualizationDataRepository.GetParsedCodeData();
       }
 
-      var file = AppDomain.CurrentDomain.BaseDirectory + @"Data\visualizationdata.json";
-      var o = JObject.Parse(File.ReadAllText(file));
+      var result = new DependencyGroup
+      {
+        name = "graylog",
+        datemodified = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff"),
+        children = new List<Children>()
+      };
 
-      return o;
+
+      foreach (var t in data.packageNames)
+      {
+        result.children.Add(new Children
+        {
+          name = t.Trim(),
+          size = null,
+          datemodified = RandomDateTime(),
+          children = new List<Children>()
+        });
+      }
+
+      foreach (var child in result.children)
+      {
+        var matching = data.connectorsArray.Where(x => x[0].ToLower() == child.name.ToLower());
+
+        foreach (var match in matching)
+        {
+          child.children.Add(new Children
+          {
+            children = null,
+            datemodified = RandomDateTime(),
+            name = match[1],
+            size = 1
+          });
+        }
+      }
+
+      return result;
+    }
+
+    private string RandomDateTime()
+    {
+      var randDate = _rand.Next(0, 400) * -1;
+
+      //subtract days
+      var date = DateTime.UtcNow.AddDays(randDate).ToString("yyyy-MM-dd HH:mm:ss.fff");
+
+      return date;
     }
   }
 }

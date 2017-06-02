@@ -1,11 +1,11 @@
 ﻿using DataVisualization.Models;
 using Newtonsoft.Json.Linq;
 
-namespace DataVisualization.Factories
+namespace DataVisualization.Factories.CodeAnalyzer
 {
   public interface ICodeAnalyzer
   {
     DependencyWheel BuildDependencyWheel(ParsedData data);
-    JObject BuildDependencyGroup(ParsedData data);
+    DependencyGroup BuildDependencyGroup(ParsedData data);
   }
 }

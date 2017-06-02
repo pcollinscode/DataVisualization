@@ -48,17 +48,15 @@
         var color = "grey";
 
         //in days
-        if (age < 30) {
+        if (age < 7) {
           color = "DarkGreen";
-        } else if (age < 60) {
+        } else if (age < 30) {
           color = "DarkRed";
         } else if (age < 90) {
           color = "Gold";
-        } else if (age < 120) {
-          color = "Indigo";
-        } else if (age < 150) {
-          color = "Orange";
         } else if (age < 180) {
+          color = "Indigo";
+        } else if (age < 365) {
           color = "DarkBlue";
         } else {
           color = "grey";

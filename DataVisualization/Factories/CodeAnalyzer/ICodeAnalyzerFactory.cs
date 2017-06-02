@@ -1,4 +1,4 @@
-﻿namespace DataVisualization.Factories
+﻿namespace DataVisualization.Factories.CodeAnalyzer
 {
   public interface ICodeAnalyzerFactory
   {
