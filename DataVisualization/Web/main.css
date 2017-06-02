@@ -140,7 +140,9 @@ text {
 }
 
   text.parent {
-    fill: #1f77b4;
+    /*fill: #1f77b4;*/
+    fill: black;
+    font-weight: bold;
   }
 
 circle {
@@ -164,7 +166,29 @@ circle {
     pointer-events: none;
   }
 
-/*initially hide thead other button*/
-.dep-wheel {
-  /*display: none;*/
+legend {
+}
+
+.week {
+  background-color: #dfffbf !important
+}
+
+.month {
+  background-color: #9fff3f !important
+}
+
+.quarter {
+  background-color: #7fff00 !important
+}
+
+.sixmonth {
+  background-color: #66cd00 !important
+}
+
+.year {
+  background-color: #458b00 !important
+}
+
+.older {
+  background-color: grey !important
 }

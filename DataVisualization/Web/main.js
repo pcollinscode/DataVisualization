@@ -49,15 +49,15 @@
 
         //in days
         if (age < 7) {
-          color = "DarkGreen";
+          color = "#dfffbf";
         } else if (age < 30) {
-          color = "DarkRed";
+          color = "#9fff3f";
         } else if (age < 90) {
-          color = "Gold";
+          color = "#7fff00";
         } else if (age < 180) {
-          color = "Indigo";
+          color = "#66cd00";
         } else if (age < 365) {
-          color = "DarkBlue";
+          color = "#458b00";
         } else {
           color = "grey";
         }
@@ -73,8 +73,10 @@
       .enter().append("svg:text")
       .attr("class", function (d) { return d.children ? "parent" : "child"; })
       .attr("x", function (d) { return d.x; })
-      .attr("y", function (d) { return d.y; })
+      .attr("y", function (d) { return d.r > 20 ? (d.y - 3 * (d.r / 4)) : d.y; })
+      //.attr("y", function (d) { return d.y; })
       .attr("dy", ".35em")
+      .attr("fill", "black")
       .attr("text-anchor", "middle")
       .style("opacity", function (d) { return d.r > 20 ? 1 : 0; })
       .text(function (d) { return d.name; });
@@ -97,7 +99,8 @@
 
     t.selectAll("text")
       .attr("x", function (d) { return x(d.x); })
-      .attr("y", function (d) { return y(d.y); })
+      .attr("y", function (d) { return d.r > 20 ? y(d.y - 3 * (d.r / 4)) : y(d.y); })
+      //.attr("y", function (d) { return y(d.y); })
       .style("opacity", function (d) { return k * d.r > 20 ? 1 : 0; });
 
     node = d;

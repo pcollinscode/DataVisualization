@@ -75,7 +75,7 @@ namespace DataVisualization.Factories.CodeAnalyzer
 
       var result = new DependencyGroup
       {
-        name = "graylog",
+        name = "",
         datemodified = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff"),
         children = new List<Children>()
       };
