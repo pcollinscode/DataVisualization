@@ -166,12 +166,10 @@
     <Compile Include="Models\ParsedData.cs" />
     <Compile Include="Models\VisualizationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\IVisualizationDataRepository.cs" />
     <Compile Include="Factories\CodeAnalyzer\ICodeAnalyzer.cs" />
     <Compile Include="Factories\CodeAnalyzer\ICodeAnalyzerFactory.cs" />
     <Compile Include="Factories\CodeParser\ICodeParser.cs" />
     <Compile Include="Factories\CodeParser\ICodeParserFactory.cs" />
-    <Compile Include="Repository\VisualizationDataRepository.cs" />
     <Compile Include="Services\INotifyAndUpdateService.cs" />
     <Compile Include="Services\IVisualizationDataService.cs" />
     <Compile Include="Services\NotifyAndUpdateService.cs" />
@@ -192,6 +190,9 @@
     <Content Include="Data\visualizationdata_wheel.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Data\main.java.org.graylog2_UML.cdg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\dataviz553 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dataviz553 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -204,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -192,3 +192,15 @@ legend {
 .older {
   background-color: grey !important
 }
+
+#puthere {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#depWheel {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

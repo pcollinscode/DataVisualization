@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using DataVisualization.Models;
-using DataVisualization.Repository;
 
 namespace DataVisualization.Factories.CodeAnalyzer
 {
   public class JavaCodeAnalyzer : ICodeAnalyzer
   {
-    private readonly IVisualizationDataRepository _visualizationDataRepository;
     private readonly Random _rand;
 
-    public JavaCodeAnalyzer(IVisualizationDataRepository visualizationDataRepository)
+    public JavaCodeAnalyzer()
     {
-      _visualizationDataRepository = visualizationDataRepository;
       _rand = new Random();
     }
 
@@ -25,7 +22,7 @@ namespace DataVisualization.Factories.CodeAnalyzer
     {
       if (data == null)
       {
-        data = _visualizationDataRepository.GetParsedCodeData();
+        throw new ArgumentNullException(nameof(data));
       }
 
       var wheel = new DependencyWheel
@@ -70,7 +67,7 @@ namespace DataVisualization.Factories.CodeAnalyzer
     {
       if (data == null)
       {
-        data = _visualizationDataRepository.GetParsedCodeData();
+        throw new ArgumentNullException(nameof(data));
       }
 
       var result = new DependencyGroup

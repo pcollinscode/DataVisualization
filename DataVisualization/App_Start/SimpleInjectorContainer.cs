@@ -1,8 +1,6 @@
 ﻿using System.Web.Http;
-using DataVisualization.Factories;
 using DataVisualization.Factories.CodeAnalyzer;
 using DataVisualization.Factories.CodeParser;
-using DataVisualization.Repository;
 using DataVisualization.Services;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
@@ -27,7 +25,6 @@ namespace DataVisualization
       container.Register<IVisualizationDataService, VisualizationDataService>();
 
       //repositories
-      container.Register<IVisualizationDataRepository, VisualizationDataRepository>();
 
       config.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
     }
