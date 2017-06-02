@@ -77,6 +77,8 @@ namespace DataVisualization.Factories.CodeAnalyzer
         children = new List<Children>()
       };
 
+      var blackList = new List<string> { "jersey", "jackson", "versioncheck", "web", "metrics", "audit", "configuration", "grok", "gettingstarted", "utilities", "timeranges",
+        "rules", "bootstrap", "buffers", "bindings", "savedsearches", "shared", "log4j" };
 
       foreach (var t in data.packageNames)
       {
@@ -95,6 +97,9 @@ namespace DataVisualization.Factories.CodeAnalyzer
 
         foreach (var match in matching)
         {
+          if (blackList.Contains(match[1].ToLower()))
+            continue;
+
           child.children.Add(new Children
           {
             children = null,
