@@ -11,11 +11,11 @@ This will deploy the code to "http://dataviz553.azurewebsites.net/".
 1. To deploy, open the Visual Studio solution file "DataVisualization.sln".
 1. Then right-click on the project in the solution explorer.
 1. Select publish.
-  1. If using Visual Studio 2017, this will open a Publish window.
-    1. Click "Publish" on the left side nav menu
-    1. On the dropdown, select "dataviz553 - Web Deploy"
-    1. Click the publish button (**NOTE**: If it asks for a password, you need to open the "dataviz553.PublishSettings" file and copy the userPWD)
-  1. If using Visual Studio 2015, this will open a Publish dialog box. Follow the dialog steps using the "dataviz553 - Web Deploy" publish profile
+    1. If using Visual Studio 2017, this will open a Publish window.
+        1. Click "Publish" on the left side nav menu
+        1. On the dropdown, select "dataviz553 - Web Deploy"
+        1. Click the publish button (**NOTE**: If it asks for a password, you need to open the "dataviz553.PublishSettings" file and copy the userPWD)
+    1. If using Visual Studio 2015, this will open a Publish dialog box. Follow the dialog steps using the "dataviz553 - Web Deploy" publish profile
 
 ##### Local Execution
 
