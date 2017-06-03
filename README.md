@@ -31,7 +31,7 @@ The semantic parser component, the WebScraper, is currently implemented as a jav
 
 To run the standalone component example, open a console window in the folder containing the executable jar file and type:
 
-WebScraper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default, parses Graylog v2.2 documentation
+WebScraper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default, parses Graylog v2.2 documentation
 
 WebScraper hostname&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses documentation at the website: hostname
 
