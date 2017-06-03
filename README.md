@@ -13,13 +13,10 @@ The dependency wheel shows the components and their connections to other compone
 ## Minimum system requirements
 
 1. Modifying Code - Requirements to modify source code
-
         1. Any C# editor (**Recommendation**: Visual Studio 2017 Community Edition or higher)
         
 2. Executing Code
-
         1. Visual Studio - allows code to run locally and in debug mode because it installs IIS Express
-        
         2. Without Visual Studio, Will need to install IIS locally and set up a local web server to run code
                 
 ## Errors
