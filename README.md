@@ -8,7 +8,7 @@ To use the current version, there are instructions on the website for how the vi
 
 The dependency wheel shows the components and their connections to other components. To visualize a specific component and its connections, hover the cursor over the bar next to the component name (see figure below).
 
-![Dependency Wheel](/images/)
+![Dependency Wheel](/images/DependencyWheel.png)
 
 ## Minimum system requirements
 1. Modifying Code - Requirements to modify source code
