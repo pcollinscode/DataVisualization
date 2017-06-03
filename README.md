@@ -6,7 +6,7 @@ Currently, there is no location on the client side to select the project to visu
 
 To use the current version, there are instructions on the website for how the visualization works. The dependency group allows you to click on any circle and it will zoom in to see the classes that belong to the component. While zoomed, click on any other circle to move to that circles classes. To zoom out, click on the same circle again or outside of any circle to see all components.
 
-The dependency wheel shows the components and their connections to other components. To visualize a specific component and its connections, hover the cursor over the bar next to the component name (see figure below).
+The dependency wheel shows the components and their connections to other components. To visualize a specific component and its connections, hover the cursor over the bar next to the component name (see red box in figure below).
 
 ![Dependency Wheel](/images/DependencyWheel.png)
 
