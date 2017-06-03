@@ -26,5 +26,13 @@ To execute locally, you must install Visual Studio for easiest execution. Recomm
         1. This will open a browser with a localhost address running the code
     1. Can also right click on "index.html" and then "View in Browser". This will not start Visual Studio debugging.
 
-### Website Scraper
-Put in description of how to run the scraper here
+### WebScraper
+The semantic parser component, the WebScraper, is currently implemented as a java class. It has been compiled into an executable jar file that can be launched from the command console on any system with a recent version of the java runtime environment installed.
+
+To run the standalone component example, open a console window in the folder containing the executable jar file and type:
+ 
+WebScraper    			By default, parses Graylog v2.2 documentation
+WebScraper hostname		Parses documentation at the website: hostname    
+ 
+Note: This prototype component has been configured heavily to work with the page structure of the Graylog website. Further work will be needed to make it compatible with a larger collection of websites.
+
