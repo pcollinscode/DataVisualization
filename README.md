@@ -34,5 +34,5 @@ To run the standalone component example, open a console window in the folder con
 WebScraper    			By default, parses Graylog v2.2 documentation
 WebScraper hostname		Parses documentation at the website: hostname    
  
-Note: This prototype component has been configured heavily to work with the page structure of the Graylog website. Further work will be needed to make it compatible with a larger collection of websites.
+**Note**: This prototype component has been configured heavily to work with the page structure of the Graylog website. Further work will be needed to make it compatible with a larger collection of websites.
 
