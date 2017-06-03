@@ -37,7 +37,7 @@ This will deploy the code to "http://dataviz553.azurewebsites.net/".
     1. If using Visual Studio 2015, this will open a Publish dialog box. Follow the dialog steps using the "dataviz553 - Web Deploy" publish profile
 
 ##### Local Environment
-To execute locally, you must install Visual Studio for easiest execution. Recommended version is Visual Studio 2017 Community but also should work on Visual Studio 2015 Community (**NOTE**: some code is untested).
+To execute locally, you must install Visual Studio for easiest execution. Recommended version is Visual Studio 2017 Community but also should work on Visual Studio 2015 Community (**NOTE**: some code is untested in VS2015).
 
 1. Clone the Github project.
 1. Open the DataVisualization.sln file in Visual Studio.
