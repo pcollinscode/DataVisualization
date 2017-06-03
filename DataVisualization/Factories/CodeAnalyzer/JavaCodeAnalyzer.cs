@@ -73,7 +73,7 @@ namespace DataVisualization.Factories.CodeAnalyzer
       var result = new DependencyGroup
       {
         name = "",
-        datemodified = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff"),
+        datemodified = DateTime.UtcNow.ToString("s") + "Z",
         children = new List<Children>()
       };
 
@@ -118,7 +118,7 @@ namespace DataVisualization.Factories.CodeAnalyzer
       var randDate = _rand.Next(0, 400) * -1;
 
       //subtract days
-      var date = DateTime.UtcNow.AddDays(randDate).ToString("yyyy-MM-dd HH:mm:ss.fff");
+      var date = DateTime.UtcNow.AddDays(randDate).ToString("s") + "Z";
 
       return date;
     }
