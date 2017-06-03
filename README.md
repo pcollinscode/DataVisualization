@@ -18,7 +18,13 @@ This will deploy the code to "http://dataviz553.azurewebsites.net/".
     1. If using Visual Studio 2015, this will open a Publish dialog box. Follow the dialog steps using the "dataviz553 - Web Deploy" publish profile
 
 ##### Local Execution
+To execute locally, you must install Visual Studio for easiest execution. Recommended version is Visual Studio 2017 Community but also should work on Visual Studio 2015 Community (**NOTE**: some code is untested).
 
+1. Clone the Github project.
+1. Open the DataVisualization.sln file in Visual Studio
+        1. To run in debug, go to Debug menu item and select start debugging (F5 for shortcut)
+                1. This will open a browser with a localhost address running the code
+        1. Can also right click on "index.html" and then "View in Browser". This will not start Visual Studio debugging.
 
 ### Website Scraper
 Put in description of how to run the scraper here
