@@ -1,70 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using DataVisualization.Factories.CodeAnalyzer;
+using DataVisualization.Factories.CodeParser;
 using DataVisualization.Models;
 
 namespace DataVisualization.Services
 {
   public class NotifyAndUpdateService : INotifyAndUpdateService
   {
-    private readonly NotifyAndUpdateData one;
-    private readonly NotifyAndUpdateData two;
+    private readonly IVisualizationDataService _visualizationDataService;
+    private readonly IMergeAndClusterService _mergeAndClusterService;
 
-    public NotifyAndUpdateService()
+    public NotifyAndUpdateService(IVisualizationDataService visualizationDataService, IMergeAndClusterService mergeAndClusterService)
     {
-      one = new NotifyAndUpdateData
-      {
-        id = 1,
-        action = "released",
-        repository = new Models.Repository
-        {
-          id = 123456,
-          fullname = "ourrepo/dataviz",
-          name = "dataviz"
-        }
-      };
-
-      two = new NotifyAndUpdateData
-      {
-        id = 2,
-        action = "released",
-        repository = new Models.Repository
-        {
-          id = 892813,
-          fullname = "theirrepo/tracker",
-          name = "tracker"
-        }
-      };
+      _visualizationDataService = visualizationDataService;
+      _mergeAndClusterService = mergeAndClusterService;
     }
 
-    public IList<NotifyAndUpdateData> Get()
+    public NotifyAndUpdateData GetById(int id)
     {
-      return new List<NotifyAndUpdateData>
-      {
-        one,
-        two
-      };
-    }
-
-    public NotifyAndUpdateData Get(int id)
-    {
-      if (id == 1)
-      {
-        return one;
-      }
-
-      if (id == 2)
-      {
-        return two;
-      }
-
-      throw new ArgumentException("Could not find resource");
+      throw new NotImplementedException();
     }
 
     public NotifyAndUpdateData Add(NotifyAndUpdateData data)
     {
-      data.id = 1;
+      var parsedAndAnalyzedData = _visualizationDataService.ParseAndAnalyze<JavaCodeParser, JavaCodeAnalyzer>();
+      var mergedAndClustered = _mergeAndClusterService.MergedAndCluster();
+
+      //TODO: save the result object for access later. Currently just reruns all of the code
+      //TODO: save the notifyobject to a data store.
 
       return data;
     }

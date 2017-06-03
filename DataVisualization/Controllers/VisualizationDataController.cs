@@ -1,5 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Http;
+using DataVisualization.Factories.CodeAnalyzer;
+using DataVisualization.Factories.CodeParser;
 using DataVisualization.Services;
 
 namespace DataVisualization.Controllers
@@ -14,17 +16,11 @@ namespace DataVisualization.Controllers
       _visualizationDataService = visualizationDataService;
     }
 
-    [Route]
-    public async Task<IHttpActionResult> Get()
-    {
-      var result = _visualizationDataService.Get();
-
-      return Ok(result);
-    }
     [Route("{id}")]
     public async Task<IHttpActionResult> GetById(int id)
     {
-      var result = _visualizationDataService.GetById(id);
+      //TODO: replace this with a stored resource
+      var result = _visualizationDataService.ParseAndAnalyze<JavaCodeParser, JavaCodeAnalyzer>();
 
       return Ok(result);
     }

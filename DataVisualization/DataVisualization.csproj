@@ -162,6 +162,7 @@
     <Compile Include="Factories\CodeParser\JavaCodeParser.cs" />
     <Compile Include="Models\DependencyGroup.cs" />
     <Compile Include="Models\DependencyWheel.cs" />
+    <Compile Include="Models\MergedAndClusteredData.cs" />
     <Compile Include="Models\NotifyAndUpdateData.cs" />
     <Compile Include="Models\ParsedData.cs" />
     <Compile Include="Models\VisualizationData.cs" />
@@ -172,6 +173,8 @@
     <Compile Include="Factories\CodeParser\ICodeParserFactory.cs" />
     <Compile Include="Services\INotifyAndUpdateService.cs" />
     <Compile Include="Services\IVisualizationDataService.cs" />
+    <Compile Include="Services\IMergeAndClusterService.cs" />
+    <Compile Include="Services\MergeAndClusterService.cs" />
     <Compile Include="Services\NotifyAndUpdateService.cs" />
     <Compile Include="Services\VisualizationDataService.cs" />
     <Compile Include="Utilities\StringExtensions.cs" />

@@ -17,15 +17,28 @@ namespace DataVisualization.Services
       _codeParserFactory = codeParserFactory;
     }
 
-    public VisualizationData Get()
-    {
-      throw new NotImplementedException();
-    }
-
-    public VisualizationData GetById(int id)
+    public VisualizationData ParseAndAnalyze()
     {
       var javaAnalyzer = _codeAnalyzerFactory.CreateCodeAnalyzer<JavaCodeAnalyzer>();
       var javaParser = _codeParserFactory.CreateCodeParser<JavaCodeParser>();
+
+      var data = javaParser.Parse();
+      var dependencyGroup = javaAnalyzer.BuildDependencyGroup(data);
+      var dependencyWheel = javaAnalyzer.BuildDependencyWheel(data);
+
+      return new VisualizationData
+      {
+        DependencyGroup = dependencyGroup,
+        DependencyWheel = dependencyWheel
+      };
+    }
+
+    public VisualizationData ParseAndAnalyze<TParse, TAnalyze>()
+      where TParse : class, ICodeParser
+      where TAnalyze : class, ICodeAnalyzer
+    {
+      var javaAnalyzer = _codeAnalyzerFactory.CreateCodeAnalyzer<TAnalyze>();
+      var javaParser = _codeParserFactory.CreateCodeParser<TParse>();
 
       var data = javaParser.Parse();
       var dependencyGroup = javaAnalyzer.BuildDependencyGroup(data);

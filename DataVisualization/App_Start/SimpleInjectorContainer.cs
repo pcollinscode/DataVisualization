@@ -23,6 +23,7 @@ namespace DataVisualization
       //services
       container.Register<INotifyAndUpdateService, NotifyAndUpdateService>();
       container.Register<IVisualizationDataService, VisualizationDataService>();
+      container.Register<IMergeAndClusterService, MergeAndClusterService>();
 
       //repositories
 

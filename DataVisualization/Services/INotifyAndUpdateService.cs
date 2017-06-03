@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataVisualization.Models;
+﻿using DataVisualization.Models;
 
 namespace DataVisualization.Services
 {
@@ -12,8 +7,7 @@ namespace DataVisualization.Services
   /// </summary>
   public interface INotifyAndUpdateService
   {
-    IList<NotifyAndUpdateData> Get();
-    NotifyAndUpdateData Get(int id);
+    NotifyAndUpdateData GetById(int id);
     NotifyAndUpdateData Add(NotifyAndUpdateData data);
   }
 }
