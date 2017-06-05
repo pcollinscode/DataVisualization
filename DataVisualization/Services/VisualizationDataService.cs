@@ -1,6 +1,4 @@
-﻿using System;
-using DataVisualization.Factories;
-using DataVisualization.Factories.CodeAnalyzer;
+﻿using DataVisualization.Factories.CodeAnalyzer;
 using DataVisualization.Factories.CodeParser;
 using DataVisualization.Models;
 
@@ -15,22 +13,6 @@ namespace DataVisualization.Services
     {
       _codeAnalyzerFactory = codeAnalyzerFactory;
       _codeParserFactory = codeParserFactory;
-    }
-
-    public VisualizationData ParseAndAnalyze()
-    {
-      var javaAnalyzer = _codeAnalyzerFactory.CreateCodeAnalyzer<JavaCodeAnalyzer>();
-      var javaParser = _codeParserFactory.CreateCodeParser<JavaCodeParser>();
-
-      var data = javaParser.Parse();
-      var dependencyGroup = javaAnalyzer.BuildDependencyGroup(data);
-      var dependencyWheel = javaAnalyzer.BuildDependencyWheel(data);
-
-      return new VisualizationData
-      {
-        DependencyGroup = dependencyGroup,
-        DependencyWheel = dependencyWheel
-      };
     }
 
     public VisualizationData ParseAndAnalyze<TParse, TAnalyze>()
