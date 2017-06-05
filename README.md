@@ -52,6 +52,8 @@ To execute locally, you must install Visual Studio for easiest execution. Recomm
 ### WebScraper
 The semantic parser component, the WebScraper, is currently implemented as a java class. It has been compiled into an executable jar file that can be launched from the command console on any system with a recent version of the Java Runtime Environment installed.
 
+It will take a few minutes to run so you need to wait until the file contains output to know that execution is finished.
+
 To run the standalone component example, open a console window in the folder containing the executable jar file and type:
 
 WebScraper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By default, parses Graylog v2.2 documentation
