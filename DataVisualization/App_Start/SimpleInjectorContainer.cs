@@ -1,6 +1,7 @@
 ﻿using System.Web.Http;
 using DataVisualization.Factories.CodeAnalyzer;
 using DataVisualization.Factories.CodeParser;
+using DataVisualization.Repository;
 using DataVisualization.Services;
 using SimpleInjector;
 using SimpleInjector.Integration.WebApi;
@@ -12,7 +13,7 @@ namespace DataVisualization
     public static void Configure(HttpConfiguration config)
     {
       var container = new Container();
-      
+
       //factories
       container.Register<ICodeAnalyzerFactory, SimpleInjectorCodeAnalyzerFactory>();
       container.Register<JavaCodeAnalyzer>();
@@ -26,6 +27,7 @@ namespace DataVisualization
       container.Register<IMergeAndClusterService, MergeAndClusterService>();
 
       //repositories
+      container.Register<IMergeAndClusterRepository, MergeAndClusterRepository>();
 
       config.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
     }

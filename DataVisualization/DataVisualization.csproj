@@ -171,6 +171,8 @@
     <Compile Include="Factories\CodeAnalyzer\ICodeAnalyzerFactory.cs" />
     <Compile Include="Factories\CodeParser\ICodeParser.cs" />
     <Compile Include="Factories\CodeParser\ICodeParserFactory.cs" />
+    <Compile Include="Repository\IMergeAndClusterRepository.cs" />
+    <Compile Include="Repository\MergeAndClusterRepository.cs" />
     <Compile Include="Services\INotifyAndUpdateService.cs" />
     <Compile Include="Services\IVisualizationDataService.cs" />
     <Compile Include="Services\IMergeAndClusterService.cs" />
@@ -208,7 +210,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Repository\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
